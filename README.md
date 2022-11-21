@@ -3,7 +3,7 @@
 - 1 Create Prisma Schema: 
 npx prisma init --datasource-provider postgresql
 
--2 Generate/Rigenerate prisma client updating:
+- 2 Generate/Rigenerate prisma client updating:
 npx prisma generate --schema prisma/schema1.prisma
 npx prisma generate --schema prisma/schema2.prisma
 npx prisma generate --schema prisma/schema3.prisma
