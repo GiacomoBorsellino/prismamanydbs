@@ -18,9 +18,9 @@ Attaccare un db secondario a un progetto in prisma
 1. Crea schema nuovo con nome diverso
    a. Cambia l’URL del db con tutte le info del db nuovo
    b. aggiungi una cartella Output del nuovo schema es.
-   i. output = "./generated/clientRoma"
+   i. output = "./generated/clientComune"
 2. fai il pull del DB specifico necessario
-   a. npx prisma db pull --schema ./prisma/schemaRoma.prisma
+   a. npx prisma db pull --schema ./prisma/schemaComune.prisma
 3. Fail il generate del prisma client
    a. npx prisma generate --schema ./prisma/schemaRoma.prisma
 4. Testa facendo il migrate di uno specifico Schema
@@ -29,7 +29,7 @@ Attaccare un db secondario a un progetto in prisma
 6.
 
 - Crea un nuovo file schemaNomeComune nella directory ./prisma
-- Aggiungi al file .env la variabile DATABASE_URL_COMUNE con "nome utente" = "johndoe", "password"="pass", "host"="192.166.2.1", "schema"="public"
+- Aggiungi al file .env la variabile DATABASE_URL_COMUNE con "nome utente" = "johndoe", "password"="pass", "host"="192.160.1.1", "schema"="public"
 - Aggiungi al nuovo file schema il path del client "../src/generated/client"
 - Fai il pull del DB con url=DATABASE_URL_COMUNE
 - Esegui comando "npx prisma db pull --schema ./prisma/schemaNomeComune.prisma"
