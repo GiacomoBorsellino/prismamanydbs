@@ -22,7 +22,7 @@ Attaccare un db secondario a un progetto in prisma
 2. fai il pull del DB specifico necessario
    a. npx prisma db pull --schema ./prisma/schemaComune.prisma
 3. Fail il generate del prisma client
-   a. npx prisma generate --schema ./prisma/schemaRoma.prisma
+   a. npx prisma generate --schema ./prisma/schemaComune.prisma
 4. Testa facendo il migrate di uno specifico Schema
    a. npx prisma migrate dev --name testCampoDaEliminare --schema=./prisma/schema.prisma
 5. Rifai normalmente il generate
